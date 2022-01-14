@@ -2,6 +2,7 @@
 <html>
     <head>
         <link rel="stylesheet" type="text/css" href="style.css">
+        <link rel="icon" href="icon.png">
         <meta charset="UTF-8">
         <meta name="description" content="This is my personal website">
         <meta name="author" content="Dean">
@@ -10,39 +11,44 @@
         <title>Dean's Domain</title>
     </head>
     <body>
-        <header>
-              <h1 class="title">Dean's Domain</h1>
-        </header>
+        <h1 class="title">DEAN'S&nbsp;DOMAIN</h1>
+        <br><br><br><br>
         <main>
-            <hr>
+            <div class="topnav">
+                <a class="active" href="index.html">Home</a>
+                <div class="dropdown">
+                    <button class="dropbtn">Co-op
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="coop.html">Summer/Fall 2021</a>
+                    </div>
+                </div>
+                <a href="game.html">Game</a>
+            </div>
+            <br>
             <nav>
                 <p class="prompt">Click the icons for more! <span class="gap"> Working around the clock</p>
-                <video style="float: right;" controls autoplay muted loop width="1000" height="400" src="IMG_7112.MOV"></video>                     
+                <video style="float: right;" autoplay muted loop width="60%" src="IMG_7112.MOV"></video>                     
                 <dl>
                     <dt>
-                        <dt>-Github</dt>
                         <a class="link-icon" href="https://www.github.com/dmellode" target="_blank">
-                            <img width="200" src="giticon.png" alt="Github">                           
+                            <img width="15%" src="giticon.png" alt="Github">                           
                         </a>  
                     </dt>
                     <dt>
-                        <dt>-Resume</dt>
-                        <a class="link-icon" href="DEAN D'MELLO-COOP-Resume.pdf" target="_blank">
-                            <img style="float:left;" width="200" src="resicon.png" alt="Resume">
+                        <br>
+                        <a class="link-icon" href="Dean-Resume.pdf" target="_blank">
+                            <img style="float:left;" width="15%" src="resicon.png" alt="Resume">
                         </a>
                     </dt>
                 </dl>
             </nav>
             <p class="subtitle"> <br> <br> <br> <br> <br> <br> <br> <br> Projects</p>
-            <p class="description">2 Player Chess *Java* <span style="padding-left: 350px"> Chrome extension quick Links</p>
-            <img width="200" src="chessmenu.png" alt="chessmenu">
-            <img width="200" src="chessboard.png" alt="chessboard">
-            <img style="padding-left: 100px;" width="300" src="extension.png" alt="extension">
+            <p class="description">2 Player Chess *Java* <span style="padding-left: 30%"> Chrome extension quick Links</p>
+            <img width="19%" src="chessmenu.png" alt="chessmenu">
+            <img width="19%" src="chessboard.png" alt="chessboard">
+            <img style="padding-left: 4%;" width="40%" src="extension.png" alt="extension">
         </main>
-        <footer style="height: 100vh; text-align: center;">
-            <canvas style="border: 2px solid skyblue;" id="c" width="400" height="400"></canvas>
-            <script src="flappy.js"></script>
-            <p class="description">Click/Spacebar to Flap</p>
-        </footer>
     </body>
 </html>

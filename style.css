@@ -1,3 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,900&display=swap');
+
+.title {
+  position: absolute;
+  left: 1%;
+  top: -5%;
+  display: block;
+  color: #ffae00;
+  font-size: 62px;
+  letter-spacing: 4px;
+  cursor: pointer;
+}
+
+.title::before {
+  content: "DEAN'S\00a0 DOMAIN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    45deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  top: 0px;
+  left: 0;
+  z-index: -1;
+  transition: 1s;
+}
+
+.title::after {
+  content: "DEAN'S\00a0 DOMAIN";
+  position: absolute;
+  color: transparent;
+  background-image: repeating-linear-gradient(
+    135deg,
+    transparent 0,
+    transparent 2px,
+    white 2px,
+    white 4px
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  top: 0px;
+  left: 0px;
+  transition: 1s;
+}
+
+.title:hover:before {
+  top: 10px;
+  left: 10px;
+}
+
+.title:hover:after {
+  top: -10px;
+  left: -10px;
+} 
+
 header {
     background-color: #f6d55c;
 }
@@ -6,9 +66,10 @@ body {
     background-color: #20639b;
 }
 
-.title {
-    color: #20639b;
-}
+/* .title {
+    color: #f6d55c;
+    font-family: 'Trocchi', serif; font-size: 45px; font-weight: normal; line-height: 48px; margin: 0;
+} */
 
 .prompt {
     font-size: larger;
@@ -17,7 +78,7 @@ body {
 }
 
 .gap {
-    padding-left: 450px;
+    padding-left: 23%;
 }
 
 .link-icon {
@@ -36,15 +97,192 @@ body {
     color: #f6d55c;
 }
 
+.subtitle2 {
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+}
+
 .description {
     font-size: medium;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #ffae00;
 }
 
+.report-text {
+    font-size: medium;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: #000000;
+    line-height: 2;
+}
+
 dt {
     color: #ffae00;
 }
 
+/* The dropdown container */
+.dropdown {
+    float: left;
+    overflow: hidden;
+  }
+  
+  /* Dropdown button */
+  .dropdown .dropbtn {
+    font-size: 16px;
+    border: none;
+    outline: none;
+    color: #20639b;
+    padding: 14px 16px;
+    background-color: inherit;
+    font-family: inherit; /* Important for vertical align on mobile phones */
+    margin: 0; /* Important for vertical align on mobile phones */
+  }
 
+  /* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    float: none;
+    color: rgb(17, 26, 102);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+  
+  /* Add a grey background color to dropdown links on hover */
+  .dropdown-content a:hover {
+    background-color: #ddd;
+  }
+  
+  /* Show the dropdown menu on hover */
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+
+/* Add a black background color to the top navigation */
+  .topnav {
+    background-color: #ffae00;
+    overflow: hidden;
+  }
+  
+  /* Style the links inside the navigation bar */
+  .topnav a {
+    float: left;
+    color: #20639b;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  
+  /* Change the color of links on hover */
+  .topnav a:hover, .dropdown:hover .dropbtn {
+    background-color: rgb(235, 155, 50);
+    color: rgb(17, 26, 102);
+  }
+  
+  /* Add a color to the active/current link */
+  .topnav a.active {
+    background-color: #f6d55c;
+    color: #20639b;
+  }
+
+  .report {
+    max-width: 70%;
+    margin: auto;
+    background: white;
+    padding: 10px;
+  }
+
+  
+/* Style the tab buttons */
+.tablink {
+    background-color: #20639b;
+    color: white;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 2% 2%;
+    font-size: 17px;
+    width: 20%;
+  }
+  
+  /* Change background color of buttons on hover */
+  .tablink:hover {
+    background-color: #143f63;
+  }
+
+  /* Three columns side by side */
+.column {
+    float: left;
+    width: 31.5%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+  }
+  
+  /* Display the columns below each other instead of side by side on small screens */
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+  
+  /* Add some shadows to create a card effect */
+  .card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Some left and right padding inside the container */
+  .container {
+    padding: 0 16px;
+  }
+  
+  /* Clear floats */
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+
+  /* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.skills-container {
+  width: 100%; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding-top: 10px; /* Add top padding */
+  padding-bottom: 10px; /* Add bottom padding */
+  color: white; /* White text color */
+}
+
+.cSharp {width: 90%; background-color: #b03bff;} /* Purple */
+.mvc {width: 80%; background-color: #2196F3;} /* Blue */
+.linq {width: 70%; background-color: #f44336;} /* Red */
+.asp {width: 65%; background-color: #ffb732;} /* Dark Grey */
+.mongo {width: 50%; background-color: #04AA6D;} /* Green */
+
+.left {
+    float: left;
+}
+
+.right {
+    float: right;
+}
 
