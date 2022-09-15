@@ -1,0 +1,204 @@
+<!DOCTYPE html> <!--Document type-->
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/style.css">
+        <link rel="icon" href="icon.png">
+        <meta charset="UTF-8">
+        <meta name="description" content="This is my personal website">
+        <meta name="author" content="Dean">
+        <meta name="keywords" content="HTML, Dean, Website">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Dean's Domain</title>
+    </head>
+    <body>
+        <h1 class="title">DEAN'S&nbsp;DOMAIN</h1>
+        <br><br><br><br>
+        <main>
+            <div class="topnav">
+                <a href="index.html">Home</a>
+                <div class="dropdown">
+                    <button style="background-color: #f6d55c;" class="dropbtn">Co-op
+                      <i class="fa fa-caret-down"></i>
+                    </button>
+                    <div class="dropdown-content">
+                      <a href="coop.html">Summer/Fall 2021</a>
+                      <a href="coop2.html">Summer 2022</a>
+                    </div>
+                </div>
+                <a href="game.html">Game</a>
+            </div>
+            <br>
+            <button class="tablink" onclick="openTab('Abstract', this)" id="defaultOpen">Abstract</button>
+            <button class="tablink" onclick="openTab('Employer', this)">Employer</button>
+            <button class="tablink" onclick="openTab('JobDescription', this)">Job Description</button>
+            <button class="tablink" onclick="openTab('LearningGoals', this)">Learning Goals</button>
+            <button class="tablink" onclick="openTab('Conclusion', this)">Acknowledgements/Conclusion</button>
+            <div id="Abstract" class="report">
+                <p class="subtitle2">Abstract</p>
+                <p class="report-text"> When approaching a business from a customer standpoint, interactions may seem tedious and like a chore. Ordering your morning coffee on the way to work 
+                    is an example of this. Positive interactions have a magical way of spinning this notion on its head, like the little spark you feel when the barista remembers your name.
+                </p>
+                <img width="100%" src="abstract.jpg" alt="lifco-small"> 
+                <p class="report-text">
+                    Through my Summer 2022 4-month co-op at Lifco Hydraulics as a Marketing Developer, I got to ensure as many Lifco customers as possible experienced that spark. 
+                    I'd like to demonstrate my process at Lifco, including the trials and successes which made every workday interesting, and the new perspective I've found through a new role at the same company.
+                </p>
+            </div>
+            <div id="Employer" class="report">
+                <p class="subtitle2">About The Employer</p>
+                <p class="report-text">
+                    Lifco Hydraulics is an expanding company that has been around since 1978! They stock, distribute and service hydraulics across North America
+                    with inventory in the US (Buffalo, NY.) and Canada (St. Catharines, ON., Toronto, ON., & Markham ON.). Additionally, sales offices are located in Canada, Mexico, and the US.
+                    In just one year, Lifco can expect to sell to 83 different countries.
+                </p>
+                <p class="report-text">
+                    Denison, Parker & Linde are just a few names on their product line of over 250 000 parts. The factory is equipped with a 400-horsepower piston pump test stand, 
+                    trained technicians, and computerized reporting capabilities.
+                </p>
+                <p class="report-text">
+                    The company is always evolving, and with it, sister companies and new departments are to be expected.
+                    The company strives for exellent sales experiences with professional reps located at each location.
+                </p>
+                <div class="row">
+                    <div class="column">
+                      <div class="card">
+                        <a class="link-icon" href="https://www.lifcohydraulics.com" target="_blank">
+                            <img src="lifco-logo.png" alt="lifco-logo" style="width:100%">
+                        </a>  
+                        <div class="container">
+                          <h2>LIFCO</h2>
+                          <p>Large-scale North American hydraulics distributer.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <a class="link-icon" href="https://www.trkattachments.com" target="_blank">
+                            <img src="trk-logo.png" alt="trk-logo" style="width:100%">
+                        </a>  
+                        <div class="container">
+                          <h2>TRK</h2>
+                          <p>TRK Attachments manufactures heavy equipment attachments.</p>
+                        </div>
+                      </div>
+                    </div>
+                  
+                    <div class="column">
+                      <div class="card">
+                        <a class="link-icon" href="https://www.esparts.com" target="_blank">
+                            <img src="esp-logo.png" alt="esp-logo" style="width:100%">
+                        </a> 
+                        <div class="container">
+                            <br>
+                          <h2>ESP</h2>
+                          <p>Equipment Spare Parts Inc.
+                            specializes in replacement parts for CATERPILLAR equipment.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div id="JobDescription" class="report">
+                <p class="subtitle2">Job Description</p>
+                <p class="report-text">
+                    I returned to Lifco with a brand new task, to setup, integrate and improve upon the newly purchased CRM salesforce (Customer Relationship Management System). I didn't realize what a daunting task this would be,
+                    but I managed to keep it under my control by lessening the scope of the work to be done. The first couple weeks were just exploring every tab and page the system had to offer.
+                    I didn't want to risk the integrity of any existing customer data, so I worked with fake information until I was comfortable to make the CRM transition.
+                </p>
+                <img src="salesforce.png" alt="mvc" class="left" style="width:40%; margin-right: 10px;">
+                <p class="report-text">
+                    Our existing CRM was made by the company years ago and was primitive compared to the seemingly limitless salesforce capabilities. I started to do mass uploads of our customer, business, and quote records, but immediately ran into an issue.
+                    Since many people had been inputting data with no standardization, the formats were always different, chunks of information would be missing or incorrectly placed. This is what made me decide to start documenting the salesforce setup and process so that anyone new coming in, could use the system the same way
+                    I had. I began collecting new batches of data from our sales team as they were working and developing new client relations. The methods to input this data were systematic and easy to replicate. Some of the work was automated as I was able to develop within salesforce and the company website, tools like form handlers made it so that 
+                    customers requesting quotes were automatically setup in the CRM with their info fully filled out.
+                </p>
+                <p class="report-text">
+                    
+                </p>
+                <img src="salescharts.png" alt="bug" class="right" style="width:40%; margin-left: 10px;">
+                <p class="report-text">
+                    Now that there was a steady flow of data to work with, it was time for the system to become useful. I trained a few members of the sales team on salesforce and made their lives easier. What they'd previously have to scour the system for, in the middle of a phone call with a customer, could now be brought up within a couple clicks. Searching a customer by name brought up their last quote 
+                    and what kind of machines they own. 
+                </p>
+                <p class="report-text">
+                    I would generate weekly reports of the sales team's performance and the speed of data generation to present to my boss at the beginning of each week. Lifco even gave me the opportunity to experiment with my own campaigns using the salesforce marketing cloud. I experimented with email campaigns, calling campaigns and postcards/physical mail integrations using postgrid and zapier. In the end, only a couple campaigns were actually run, but it was a fun and new experience none the less!
+                </p>
+            </div>
+            <div id="LearningGoals" class="report">
+                <p class="subtitle2">Learning Goals</p>
+                <h3>1.	Learn how to take an external software like salesforce and connect it to live data from our website.</h3>
+                <p class="report-text">
+                    I noticed that some customer data on our website was being recorded for sales and quoting purposes, but that same data was being manually entered into the old CRM by the sales team. I used form handlers created on salesforce and put them on the site so that all the necessary values were funneled into salesforce and placed under the correct leads.
+                    This cut out a monotonous kind of work the sales team has been doing for years, and saved time in the future with salesforce taking even more information in than the last CRM. The experience of getting two kinds of softwares to interact will come in handy for future data manipulation.
+                </p>
+                <h3>2.	Demonstrate the effectiveness of the salesforce system and improve our use of it.</h3>
+                <p class="report-text">
+                   My boss would have weekly meetings every Monday to review the previous week's progress and plan ahead. I brought reports that were easy to generate through salesforce and presented the most valuable information in a consice manner. This way we could tell if more phone calls needed to be made, if the current calling strategy was ineffective or if certain reps weren't able to keep up with the teams demand.
+                   This meant that week by week we could seek constant improvement and expect significantly better results by the end of the month. I visually layed out data using charts to compare opportunities won to lost, weigh loss reasons, and leads converted vs lost.
+                </p>
+                <h3>3.	Create new functionality within salesforce for specific needs of the sales team. </h3>
+                <p class="report-text">
+                    Sometimes, the sales team would notice functionality that they were missing, which would make their day to day even easier, so they would setup a meeting with me and it was my job to implement the new feature. This ranged from 
+                    adding new reasons as to why an opportunity was lost, to creating filters to determine which of the sister companies a customer had interacted with, all the way to auto-sending reminder emails when a task is nearly due. Salesforce made these additions seemless with their own developing language and workflow tool.
+                </p>
+
+                <h3>Skills</h3>
+                <p>C#</p>
+                <div class="skills-container">
+                    <div class="skills cSharp">90%</div>
+                </div>
+
+                <p>TEAMWORK</p>
+                <div class="skills-container">
+                    <div class="skills mvc">80%</div>
+                </div>
+
+                <p>SALESFORCE</p>
+                <div class="skills-container">
+                    <div class="skills linq">70%</div>
+                </div>
+
+                <p>MARKETING</p>
+                <div class="skills-container">
+                    <div class="skills asp">65%</div>
+                </div>
+
+                <p>SALES</p>
+                <div class="skills-container">
+                    <div class="skills mongo">50%</div>
+                </div>
+            </div>
+            <div id="Conclusion" class="report">
+                <p class="subtitle2">Acknowledgements</p>
+                <p class="report-text">
+                    I’d like to first thank my boss Fraser Berkhout, for giving me this amazing experience and guiding me along the way. My supervisor Chris Bain taught me a lot about leadership and was always there to help me and clarify for me, even with everything else on his plate. Kyle Weymark has showed me as much about coding as several courses could. Wayne Burgess shared his design expertise and Shawn Dalrymple would help me with even trivial things that I didn’t understand. Layla Mansour was the other co-op student with me and it was fun learning together. I'd also like to thank Lou, Lise & Linda for their incredible sales expertise and patience while I found my footing. Thank you all for your patience and for helping me grow as a student of Computer Science.
+                </p>
+                <img width="100%" src="group.jpg" alt="group"> 
+                <p class="subtitle2">Conclusion</p>
+                <p class="report-text">
+                    Returning to familiar faces who warmly welcomed me back was a refreshing experience, but I was worried I wouldn't be able to grasp anything in such a complex software. With help from sales experts, knowledgable programmers and a supportive boss, I was able to slowly but surely make another impactful 4 months at Lifco Hydraulics.
+                </p>
+                <img width="100%" src="front.jpg" alt="front"> 
+            </div>
+        </main>
+    </body>
+</html>
+
+<script>
+    function openTab(tabName,elmnt) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("report");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].style.backgroundColor = "";
+      }
+      document.getElementById(tabName).style.display = "block";
+    }
+    // Get the element with id="defaultOpen" and click on it
+    document.getElementById("defaultOpen").click();
+</script>
